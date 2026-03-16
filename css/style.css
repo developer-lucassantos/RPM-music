@@ -116,24 +116,9 @@ h1, h2, h4, .navbar-brand {
     box-sizing: border-box;
 }
 
-/* TEXTO PRINCIPAL */
 
-/* --- AJUSTE FINAL PARA O TÍTULO --- */
-.hero-no-break {
-    white-space: nowrap;
-    display: inline-block;
-    /* Reduzi o valor ideal de 9.2vw para 8.8vw e o mínimo para 1.2rem */
-    font-size: clamp(1.2rem, 8.8vw, 7rem) !important;
-    max-width: 100%;
-    overflow: visible; /* Mudamos para visible para garantir que nada seja escondido se houver margem */
-}
 
-/* Ajuste específico para telas extremamente estreitas (como o seu exemplo) */
-@media (max-width: 380px) {
-    .hero-no-break {
-        font-size: 8.2vw !important; /* Força um encolhimento maior baseado na largura da tela */
-    }
-}
+.hero-no-break
 
 .outline-text {
     -webkit-text-stroke: 1px var(--text-color);
